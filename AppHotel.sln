@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHotel.Android", "AppHotel\AppHotel.Android\AppHotel.Android.csproj", "{1EA38589-45E1-4312-B34D-34B486100387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHotel", "AppHotel\AppHotel\AppHotel.csproj", "{A3F0A78B-9E90-4892-9EB3-2244E81089EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EA38589-45E1-4312-B34D-34B486100387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA38589-45E1-4312-B34D-34B486100387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA38589-45E1-4312-B34D-34B486100387}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1EA38589-45E1-4312-B34D-34B486100387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA38589-45E1-4312-B34D-34B486100387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA38589-45E1-4312-B34D-34B486100387}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F0A78B-9E90-4892-9EB3-2244E81089EA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EEE9D52-D37B-4B49-BF92-26E6C792816D}
+	EndGlobalSection
+EndGlobal

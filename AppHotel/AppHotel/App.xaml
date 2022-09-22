@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotel.App">
+
+
+    <!-- Criando Estilos -->
+    <Application.Resources>
+        <Style TargetType="Label" x:Key="FontePersonalizada">
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="PlayfairDisplay-VariableFont_wght.ttf#PlayfairDisplay-VariableFont_wght" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Label" x:Key="titulo" BaseResourceKey="FontePersonalizada">
+            <Setter Property="FontSize" Value="54" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="Valores">
+            <Setter Property="TextColor" Value="#4a607b" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="Explicativos">
+            <Setter Property="TextColor" Value="#4a607b" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="TextTransform" Value="Uppercase" />
+            <Setter Property="FontSize" Value="Body" />
+        </Style>
+
+        <!-- Frame branco atrás -->
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#EEE" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+
+        <!-- Botão calcular -->
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#708092" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+
+    </Application.Resources>
+    
+    
+</Application>

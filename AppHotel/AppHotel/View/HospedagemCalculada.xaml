@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotel.View.HospedagemCalculada">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Detalhes da Estadia" Style="{StaticResource Titulo} " />
+
+            <Label Text="{Binding Path=Quarto.Descricao}"
+                   TextColor="White"
+                   TextTransform="Uppercase"
+                   FontAttributes="Bold"
+                   Margin="0, 15, 0, 10"/>
+
+            <Frame Margin="10">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Adultos: " />
+                        <Label Text="{Binding QntAdultos}" Style="{StaticResource Valores}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Crianças: " />
+                        <Label Text="{Binding QntCriancas}" Style="{StaticResource Valores}" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="10">
+                <Grid RowDefinitions="Auto, Auto"
+                      ColumnDefinitions="*, *, *">
+                    <Label Grid.Row="0" Grid.Column="0" Text="Check-In:" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="Check-Out:" />
+                    <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                    <Label Grid.Row="1" Grid.Column="0" 
+                           Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"
+                           Style="{StaticResource Valores}" />
+
+                    <Label Grid.Row="1" Grid.Column="1" 
+                           Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}"
+                           Style="{StaticResource Valores}" />
+
+                    <Label Grid.Row="1" Grid.Column="2" 
+                           Text="{Binding Estadia}" 
+                           Style="{StaticResource Valores}" />
+                </Grid>
+            </Frame>
+
+            <Frame Margin="10">
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Valor da Hospedagem: " />
+                            <Span Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"                                  
+                                  FontSize="Large"
+                                  TextColor="DarkRed"
+                                  FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
