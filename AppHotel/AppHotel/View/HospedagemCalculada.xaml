@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHotel.View.HospedagemCalculada"
-             Background="blue">
+             Background="#4a607b">
     <ContentPage.Content>
         <StackLayout>
             
@@ -57,7 +57,7 @@
                             <Span Text="Valor da Hospedagem: " />
                             <Span Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"                                  
                                   FontSize="Large"
-                                  TextColor="DarkRed"
+                                  TextColor="#4a607b"
                                   FontAttributes="Bold"/>
                         </FormattedString>
                     </Label.FormattedText>

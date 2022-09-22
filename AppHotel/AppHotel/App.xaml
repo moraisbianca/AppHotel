@@ -6,16 +6,9 @@
 
     <!-- Criando Estilos -->
     <Application.Resources>
-        <Style TargetType="Label" x:Key="FontePersonalizada">
-            <Setter Property="FontFamily">
-                <Setter.Value>
-                    <OnPlatform x:TypeArguments="x:String"
-                                Android="PlayfairDisplay-VariableFont_wght.ttf#PlayfairDisplay-VariableFont_wght" />
-                </Setter.Value>
-            </Setter>
-        </Style>
 
         <Style TargetType="Label" x:Key="Titulo">
+            <Setter Property="FontFamily" Value="Century Gothic"/>
             <Setter Property="FontSize" Value="54" />
             <Setter Property="TextColor" Value="White" />
         </Style>
