@@ -9,20 +9,18 @@ namespace AppHotel.Model
     public class Hospedagem
     {
         int quantidade_adultos;
-        Suite Quarto;
+        Suite _quarto;
 
         public Suite QuartoEscolhido
         {
             //Pega a informação do quarto escolhido (erro caso não haja uma opção selecionada)
-            get => Quarto;
+            get => _quarto;
             set
             {
-                if (value == null)
-                {
+                if (value == null)                
                     throw new Exception("Erro! Informe o quarto escolhido.");
 
-                    Quarto = value;
-                }
+                 _quarto = value;                
             }
         }
 

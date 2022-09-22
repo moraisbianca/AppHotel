@@ -8,10 +8,11 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand">
 
-            <Label Text="Cálculo da Diária" Style="{StaticResource titulo }" />
+            <Label Text="Cálculo da Diária" Style="{StaticResource Titulo}" />
 
             <Frame Margin="10">
                 <StackLayout>
+
                     <Grid RowDefinitions="Auto, Auto"
                           ColumnDefinitions="*, *, 2*">
 
@@ -73,7 +74,11 @@
                     </Frame>
                     <Button Text="Calcular Hospedagem" Clicked="Button_Clicked" />
                 </StackLayout>
+
+
             </Frame>
+
+
         </StackLayout>
     </ContentPage.Content>
 

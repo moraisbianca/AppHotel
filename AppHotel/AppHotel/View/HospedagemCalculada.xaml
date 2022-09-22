@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppHotel.View.HospedagemCalculada">
+             x:Class="AppHotel.View.HospedagemCalculada"
+             Background="blue">
     <ContentPage.Content>
         <StackLayout>
+            
+           
 
             <Label Text="Detalhes da Estadia" Style="{StaticResource Titulo} " />
 
@@ -12,7 +15,7 @@
                    TextTransform="Uppercase"
                    FontAttributes="Bold"
                    Margin="0, 15, 0, 10"/>
-
+            
             <Frame Margin="10">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <StackLayout Orientation="Horizontal">
@@ -25,7 +28,7 @@
                     </StackLayout>
                 </StackLayout>
             </Frame>
-
+            
             <Frame Margin="10">
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, *">
@@ -46,7 +49,7 @@
                            Style="{StaticResource Valores}" />
                 </Grid>
             </Frame>
-
+            
             <Frame Margin="10">
                 <Label HorizontalOptions="Center">
                     <Label.FormattedText>
@@ -59,7 +62,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-            </Frame>
+            </Frame> 
 
             <Button Text="Voltar" Clicked="Button_Clicked"/>
 

@@ -36,7 +36,7 @@ namespace AppHotel.View
         {
             try
             {
-                App.Current.MainPage = new HospedagemCalculada()
+                Navigation.PushAsync(new HospedagemCalculada()
                 {
                     BindingContext = new Hospedagem()
                     {
@@ -46,7 +46,7 @@ namespace AppHotel.View
                         DataCheckIn = dtpck_checkin.Date,
                         DataCheckOut = dtpck_checkout.Date
                     }
-                };
+                });
 
             }
             catch (Exception ex)
@@ -62,5 +62,7 @@ namespace AppHotel.View
             dtpck_checkout.MinimumDate = elemento.Date.AddDays(1);
             dtpck_checkout.MaximumDate = elemento.Date.AddMonths(6);
         }
+
+
     }
 }
